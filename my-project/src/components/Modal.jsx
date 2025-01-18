@@ -11,6 +11,7 @@ function Modal({onClose,isOpen,children}) {
             <div className='flex justify-end'>
                 <AiOutlineClose onClick={onClose} className="text-2xl" />
             </div>
+            <div>{children}</div>
         </div>
         <div onClick={onClose} className='backdrop-blur h-screen w-screen absolute top-0 z-40'>
 
